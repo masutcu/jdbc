@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,7 +13,10 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f1633fc8-cf2d-4b49-aadf-30cd83a9eecb">
-      <console name="Connection 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrenciler;]]></console>
+      <console name="Connection 1" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrenciler;
+select * from urunler;
+select * from doctors;]]></console>
+      <console name="JDBC_Batch129" type="STANDARD" schema="jdbc" session="Main"><![CDATA[select * from urunler;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -58,7 +61,7 @@
           <deprecated-pwd value="TGl0dmFueWExMjM=" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />

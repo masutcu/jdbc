@@ -30,5 +30,20 @@ public class Query05 {
         }
         System.out.println(count +" adet  satır eklendi");
 
+        //2. YOL
+        String [] veri1 = {"insert into ogrenciler values (610, 'Sena Can', 12, 'K')",
+                "insert into ogrenciler values (611, 'Sena Can', 12, 'K')",
+                "insert into ogrenciler values (622, 'Sena Can', 12, 'K')"};
+
+        for(String each: veri1){
+            st.addBatch(each);          //yukarıdaki dataların hepsini birleştirir
+        }
+        st.executeBatch();              //Dataları tek seferde gönderir.
+
+        con.close();
+        st.close();
+
+
+
     }
 }
